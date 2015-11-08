@@ -21,7 +21,7 @@ if [ -f /.bashrc ]; then
 fi
 
 if [ ! -f /root/.linuxbrew ]; then
-  cp /root-dotconfigs/* /root
+  cp -r /root-dotconfigs/.* /root/
 fi
 
 /bin/bash --rcfile /root/.bashrc
