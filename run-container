@@ -20,4 +20,8 @@ if [ -f /.bashrc ]; then
   cp /.bashrc /root/.bashrc
 fi
 
+if [ ! -f /root/.linuxbrew ]; then
+  cp /root-dotconfigs/* /root
+fi
+
 /bin/bash --rcfile /root/.bashrc
